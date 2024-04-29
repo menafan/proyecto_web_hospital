@@ -1,18 +1,45 @@
-# Astro Starter Kit: Basics
+# Proyecto del curso de programación web | Policlinico La Trinidad
 
-```sh
-npm create astro@latest -- --template basics
-```
+<!-- > [!NOTE]
+> -->
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+> [!IMPORTANT]
+>Para poder contribuir al proyecto
+>
+>**1. Hacer un fork del repositorio en GitHub**
+>
+>![Fork Repositorio](/public/Screenshots/ForkGitHub.png)
+>
+>**2. Clonar el repositorio**
+>
+>clona el repositorio normalmente segun el editor que estes utilizando.
+>
+>![Clonar Repositorio](/public/Screenshots/cloneGitHub.png)
+>
+>![Clonar repositorio Link](/public/Screenshots/cloneGitHubLink.png)
+>**3. Realizar el siguiente comando**
+>
+>Despues de clonar el repositorio te dirijes a la carpeta donde se encuentra el proyecto y abres la terminal ahi.
+> Tendras que utilizar el siguiente comando con pnpm(que es lo que se esta usando en el proyecto).
+>
+>`pnpm install`
+>
+>![Comando pnpm install](/public/Screenshots/pnpmInstall.png)
+>**4. Comprobación**
+>
+>Para poder comprobar que todo este correcto tendra que correr el proyecto en localhost con el siguiente comando
+>
+>`pnpm run dev`
+>
+>![Comando pnpm run dev](/public/Screenshots/pnpmRunDev.png)
+>
+>**5. Contribuye**
+>
+>Con todo esto ya podras realizar tus PR al proyecto
+>
+>![PR al pryecto](/public/Screenshots/prGitHub.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
+<!-- ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -28,17 +55,9 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── pages/
 │       └── index.astro
 └── package.json
-```
+``` -->
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+## 🧞 Comandos
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -48,7 +67,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
