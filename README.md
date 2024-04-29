@@ -17,27 +17,27 @@
 > [!IMPORTANT]
 >## Para poder contribuir al proyecto
 >### 1. Hacer un fork del repositorio en GitHub
->![Fork Repositorio](/public/Screenshots/ForkGitHub.png)
+>![Fork Repositorio](/public/img/Screenshots/ForkGitHub.png)
 >### 2. Clonar el repositorio
 >Clona el repositorio normalmente segun el editor que estes utilizando.
 >![Clonar Repositorio](/public/Screenshots/cloneGitHub.png)
->![Clonar repositorio Link](/public/Screenshots/cloneGitHubLink.png)
+>![Clonar repositorio Link](/public/img/Screenshots/cloneGitHubLink.png)
 >### 3. Realizar el siguiente comando
 >Despues de clonar el repositorio te dirijes a la carpeta donde se encuentra el proyecto y abres la terminal ahi.
 >Tendras que utilizar el siguiente comando con pnpm(que es lo que se esta usando en el proyecto).
 > ```
 > pnpm install
 > ```
->![Comando pnpm install](/public/Screenshots/pnpmInstall.png)
+>![Comando pnpm install](/public/img/Screenshots/pnpmInstall.png)
 >### 4. Comprobación
 >Para poder comprobar que todo este correcto tendra que correr el proyecto en localhost con el siguiente comando
 > ```
 > pnpm run dev
 > ```
->![Comando pnpm run dev](/public/Screenshots/pnpmRunDev.png)
+>![Comando pnpm run dev](/public/img/Screenshots/pnpmRunDev.png)
 >### 5. Contribuye
 >Con todo esto ya podras realizar tus PR al proyecto
->![PR al pryecto](/public/Screenshots/prGitHub.png)
+>![PR al pryecto](/public/img/Screenshots/prGitHub.png)
 
 <!-- ## 🚀 Project Structure
 
