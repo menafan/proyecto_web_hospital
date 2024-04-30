@@ -13,6 +13,13 @@
 >Ademas, se utiliza el gestor de paquetes **pnpm** en este proyecto.
 >
 >[![Pnpm Logo](https://pnpm.io/img/pnpm-no-name-with-frame.svg)](https://pnpm.io/)
+>
+>Por ultimo, se utilizará el framework de CSS: **Tailwind CSS** en este proyecto.
+>Para agregar las dependencias de Tailwind CSS en el proyecto de Astro se debe utilizar este comando
+> ```
+> pnpm add @astrojs/tailwind tailwindcss
+> ```
+>[![TailwindCSS Logo](https://svglogos.net/wp-content/uploads/tailwindcss-icon.svg)](https://tailwindcss.com/)
 
 > [!IMPORTANT]
 >## Para poder contribuir al proyecto
