@@ -27,7 +27,7 @@
 >![Fork Repositorio](/public/img/Screenshots/ForkGitHub.png)
 >### 2. Clonar el repositorio
 >Clona el repositorio normalmente segun el editor que estes utilizando.
->![Clonar Repositorio](/public/Screenshots/cloneGitHub.png)
+>![Clonar Repositorio](/public/img/Screenshots/cloneGitHub.png)
 >![Clonar repositorio Link](/public/img/Screenshots/cloneGitHubLink.png)
 >### 3. Realizar el siguiente comando
 >Despues de clonar el repositorio te dirijes a la carpeta donde se encuentra el proyecto y abres la terminal ahi.
