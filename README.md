@@ -1,5 +1,7 @@
 # Proyecto del curso de programación web | Policlinico La Trinidad
-
+**Desconfíen del que dice ya esta muerto, ese nunca muere.**
+**Desconfien de los que dan discursos por que son primeros en desaparecer en las dificultades**
+**Alan Gabriel Ludwig García Pérez**
 >[!CAUTION]
 >### Dependencias
 >Este proyecto hace uso del framework de la web **Astro**.
