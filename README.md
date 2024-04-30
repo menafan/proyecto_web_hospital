@@ -1,7 +1,4 @@
 # Proyecto del curso de programación web | Policlinico La Trinidad
-**Desconfíen del que dice ya esta muerto, ese nunca muere.**
-**Desconfien de los que dan discursos por que son primeros en desaparecer en las dificultades**
-**Alan Gabriel Ludwig García Pérez**
 >[!CAUTION]
 >### Dependencias
 >Este proyecto hace uso del framework de la web **Astro**.
@@ -27,10 +24,9 @@
 >## Para poder contribuir al proyecto
 >### 1. Hacer un fork del repositorio en GitHub
 >![Fork Repositorio](/public/img/Screenshots/ForkGitHub.png)
->### 2. Clonar el repositorio
+>### 2. Clonar su repositorio (el del fork)
 >Clona el repositorio normalmente segun el editor que estes utilizando.
 >![Clonar Repositorio](/public/img/Screenshots/cloneGitHub.png)
->![Clonar repositorio Link](/public/img/Screenshots/cloneGitHubLink.png)
 >### 3. Realizar el siguiente comando
 >Despues de clonar el repositorio te dirijes a la carpeta donde se encuentra el proyecto y abres la terminal ahi.
 >Tendras que utilizar el siguiente comando con pnpm(que es lo que se esta usando en el proyecto).
@@ -45,7 +41,7 @@
 > ```
 >![Comando pnpm run dev](/public/img/Screenshots/pnpmRunDev.png)
 >### 5. Contribuye
->Con todo esto ya podras realizar tus PR al proyecto
+>Con todo esto ya podras realizar tus PR al proyecto desde el fork que usted creo
 >![PR al pryecto](/public/img/Screenshots/prGitHub.png)
 
 <!-- ## 🚀 Project Structure
