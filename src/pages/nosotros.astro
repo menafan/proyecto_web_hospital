@@ -1,27 +1,39 @@
 ---
 import Layout from "../layouts/Layout.astro"
 ---
-
-<Layout title="Nosotros">
-    <main>
-        <h1 class="text-center font-black uppercase text-7xl">Nosotros</h1>
-        <section>
-            <article>
-                <h2>Nuestra historia</h2>
-                <p>Servicios de Salud con Especialidades Médicas. Servicios de apoyo al diagnostico como Laboratorio, Electrocardiograma, Ecografias. Terapias de Lenguaje, Aprendizaje, Física. Evaluaciones en Psicología. Programa de Diabéticos e Hipertensos. Tratamiento de pie diabetico, Ulceras vericosas. Odontología. Podología. Farmacia. Tenemos 26 años de experiencia al servicio del pueblo.</p>
+<Layout title="Policlinico La Trinidad | Nosotros">
+    <main class="mx-auto max-w-6xl">
+        <h1 class="mb-4 text-center font-black uppercase text-6xl md:text-8xl">Nosotros</h1>
+        <section class=" grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mb-5 text-ice_blue-900">
+            <article class="hover:shadow-2xl">
+                <img class="rounded-xl h-full w-full object-cover" src="/public/img/imgNosotros/image01.png" alt="">
             </article>
-            <article>
-                <h3>¿Quienes somos?</h3>
-                <p>Somos un Centro Medico Parroquial con la misión de satisfacer las necesidades de salud de nuestra población de Villa María del Triunfo y distritos aledaños, ofreciéndoles servicios de atención primaria y comunitaria con calidad y eficiencia</p>
+            <article class="content-center w-full p-4 bg-steel_blue-200 rounded-xl md:col-span-2">
+                <h2 class="uppercase font-extrabold text-4xl text-center md:text-2xl md:text-left">¿Quienes somos?</h2>
+                <p class=" text-pretty leading-10">Somos un Centro Medico Parroquial con la misión de satisfacer las necesidades de salud de nuestra población de Villa María del Triunfo y distritos aledaños, ofreciéndoles servicios de atención primaria y comunitaria con calidad y eficiencia</p>
             </article>
-            <article>
-                <h3>¿Que nos diferencia?</h3>
-                <p>Queremos ser los referentes de salud de nuestra población, aportando calidad, confianza y seguridad en nuestros servicios de salud que reciben todos los ciudadanos que atendemos a lo largo de su vida.</p>
+            <article class=" w-full p-4 bg-steel_blue-200 rounded-xl md:row-span-2">
+                <h2 class="uppercase font-extrabold text-4xl text-center md:text-2xl md:text-left">Nuestra historia</h2>
+                <p class=" text-pretty leading-10">Servicios de Salud con Especialidades Médicas. Servicios de apoyo al diagnostico como Laboratorio, Electrocardiograma, Ecografias. Terapias de Lenguaje, Aprendizaje, Física. Evaluaciones en Psicología. Programa de Diabéticos e Hipertensos. Tratamiento de pie diabetico, Ulceras vericosas. Odontología. Podología. Farmacia. Tenemos 26 años de experiencia al servicio del pueblo.</p>
             </article>
-            <article>
-                <h3>Nestras raices</h3>
-                <p>Cuando Jesús confía a los apóstoles la misión de llevar el Evangelio de la salud-salvación hasta los confines del mundo, les manda curar a los enfermos como un signo inequívoco de la presencia del Reino de Dios. Jesús reunió a los Doce y les dio autoridad para expulsar a todos los malos espíritus y poder para curar enfermedades. Después los envió a anunciar el Reino de Dios y a curar (Lc 9, 1-2).</p>
+            <article class="row-span-2 col-span-1 md:col-span-2 hover:shadow-2xl ">
+                <img class="rounded-xl h-full w-full object-cover" src="/public/img/imgNosotros/image03.png" alt="">
+            </article>
+            <article class="hover:shadow-2xl">
+                <img class=" h-full w-full rounded-xl object-cover" src="/public/img/imgNosotros/image02.png" alt="">
+            </article>
+            <article class="w-full p-4 bg-steel_blue-200 rounded-xl">
+                <h2 class="uppercase font-extrabold text-4xl text-center md:text-2xl md:text-left">Misión</h2>
+                <p class=" text-pretty leading-10">Queremos ser los referentes de salud de nuestra población, aportando calidad, confianza y seguridad en nuestros servicios de salud que reciben todos los ciudadanos que atendemos a lo largo de su vida.</p>
+            </article>
+            <article class="w-full p-4 bg-steel_blue-200 rounded-xl">
+                <h2 class="uppercase font-extrabold text-4xl text-center md:text-2xl md:text-left">Visión</h2>
+                <p class=" text-pretty leading-10">Queremos ser los referentes de salud de nuestra población, aportando calidad, confianza y seguridad en nuestros servicios de salud que reciben todos los ciudadanos que atendemos a lo largo de su vida.</p>
             </article>
         </section>
-    </main>
+        <section class="flex flex-col md:flex-row bg-steel_blue-200 rounded-xl h-fit hover:shadow-2xl">
+            <img src="/public/img/icons/main-icon.webp" alt="" class="rounded-t-xl aspect-video md:aspect-square md:rounded-l-xl md:rounded-none">
+            <p class="px-8 content-center leading-10 text-pretty text-xl text-outer_space-900">Cuando Jesús confía a los apóstoles la misión de llevar el Evangelio de la salud-salvación hasta los confines del mundo, les manda curar a los enfermos como un signo inequívoco de la presencia del Reino de Dios. Jesús reunió a los Doce y les dio autoridad para expulsar a todos los malos espíritus y poder para curar enfermedades. Después los envió a anunciar el Reino de Dios y a curar (Lc 9, 1-2).</p>
+        </section>
+    <main/>
 </Layout>
