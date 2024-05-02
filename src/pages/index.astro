@@ -1,9 +1,94 @@
 ---
+import { number } from 'astro/zod';
 import Layout from '../layouts/Layout.astro';
+import '../css/index.css';
+
+class ImageInfo{
+	source: string;
+	alternative: string;
+
+	constructor(source: string, alternative: string) {
+		this.source = source;
+		this.alternative = alternative;
+	}
+}
+
+let images: ImageInfo[] = [new ImageInfo("../public/img/icons/slide1.jpg", "Servicio de pediatría por Dra. Melissa Herrera: Jueves 2 de mayo"),
+          new ImageInfo("../public/img/icons/slide2.jpg", "Servicio de psiquiatría por Dr. Henry Quispe Wong: Sábado 18 de mayo"),
+		  new ImageInfo("../public/img/icons/slide3.jpg", "Control de diabetes con Lic. Maria Luyo Muchotrigo: Viernes 26 de abril"), 
+		  new ImageInfo("../public/img/icons/slide4.jpg", "Control de crecimiento y desarrollo con Lic. Silvana Hernández: Miércoles 24 de abril")];
+
+let slideIndex = 1;
+
+// Tengo que ejecutar esta función ni bien inicie la página
+function displaySelectedSlide(slideNumber: number){
+	let i: number;
+	const slides = document.getElementsByClassName("slideshowImage");
+	const dots = document.getElementsByClassName("dotControl");
+
+	if(slideNumber > slides.length) {slideIndex = 1}
+	if(slideNumber < 1) {slideIndex = slides.length}
+
+    for(i = 0; i < slides.length; i++){
+		if(slides[i].className.includes(" block")){
+			slides[i].className = slides[i].className.replace(" block", " hidden");
+			break;
+		}
+	}
+
+	for(i = 0; i < dots.length; i++){
+		dots[i].className = dots[i].className.replace(" hover:bg-[#717171]", "");
+	}
+
+	slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" hidden", " block");
+    dots[slideIndex - 1].className += " hover:bg-[#717171]";
+}
+
+function slideMove(n: number){
+	console.log('slideMove function called with argument:', n);
+	displaySelectedSlide(slideIndex += n);
+}
+
+function currentSlide(n: number){
+	displaySelectedSlide(slideIndex = n);
+}
 ---
 
 <Layout title="Centro Medico | Policlinico La Trinidad">
 	<main>
 		<h1>Principal</h1>
+		<br>
+		<section class="slideshowSection">
+			<div class="slideshowContainer max-w-5xl relative m-auto">
+				<div class="slideshowImage hidden">
+					<!-- div class="slideshowPosIndicator">1 / 4</div -->
+					<img class="w-full" src={images[0].source} alt={images[0].alternative}/>
+				</div>
+				<div class="slideshowImage hidden">
+					<!-- div class="slideshowPosIndicator">2 / 4</div -->
+					<img class="w-full" src={images[1].source} alt={images[1].alternative}/>
+				</div>
+				<div class="slideshowImage hidden">
+					<!-- div class="slideshowPosIndicator">3 / 4</div -->
+					<img class="w-full" src={images[2].source} alt={images[2].alternative}/>
+				</div>
+				<div class="slideshowImage hidden">
+					<!-- div class="slideshowPosIndicator">4 / 4</div -->
+					<img class="w-full" src={images[3].source} alt={images[3].alternative}/>
+				</div>
+
+				<!-- esto parece no funcionar -->
+				<a class="moveBackward cursor-pointer absolute top-2/4 w-auto -mt-[22px] p-4 font-bold text-[18px] max-w-[300px]:text-[11px] transition duration-600 ease-linear select-none rounded-md hover:bg-[rgba(0,0,0,0.8)]" @click={() => slideMove(-1)}>&#10096;</a>
+				<a class="moveForward cursor-pointer absolute top-2/4 w-auto -mt-[22px] p-4 font-bold text-[18px] max-w-[300px]:text-[11px] transition duration-600 ease-linear select-none rounded-md hover:bg-[rgba(0,0,0,0.8)] right-0" @click={() => slideMove(-1)}>&#10097;</a>
+			</div>
+
+			<div class="text-center">
+				<!-- esto tampoco -->
+				<span class="dotContol cursor-pointer h-3.5 w-3.5 my-0 mx-0.5 bg-[#BBBBBB] rounded-full inline-block transition-colors duration-600 ease-linear hover:bg-[#717171]" @click="currentSlide(1)"></span>
+				<span class="dotContol cursor-pointer h-3.5 w-3.5 my-0 mx-0.5 bg-[#BBBBBB] rounded-full inline-block transition-colors duration-600 ease-linear hover:bg-[#717171]" @click="currentSlide(2)"></span>
+				<span class="dotContol cursor-pointer h-3.5 w-3.5 my-0 mx-0.5 bg-[#BBBBBB] rounded-full inline-block transition-colors duration-600 ease-linear hover:bg-[#717171]" @click="currentSlide(3)"></span>
+				<span class="dotContol cursor-pointer h-3.5 w-3.5 my-0 mx-0.5 bg-[#BBBBBB] rounded-full inline-block transition-colors duration-600 ease-linear hover:bg-[#717171]" @click="currentSlide(4)"></span>
+			</div>
+		</section>
 	</main>
 </Layout>
