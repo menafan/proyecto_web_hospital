@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro"
 ---
 <Layout title="Policlinico La Trinidad | Nosotros">
     <!--Version con Tailwind -->
-    <!-- <header class="flex justify-center mb-4">
+    <header class="flex justify-center mb-4">
         <h1 class="w-fit font-black uppercase text-6xl md:text-8xl">Nosotros</h1>
     </header>
     <main class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mb-5 text-ice_blue-900">
@@ -36,10 +36,10 @@ import Layout from "../layouts/Layout.astro"
     <footer class="mx-auto max-w-6xl flex flex-col md:flex-row bg-mint_green-100 rounded-xl hover:shadow-2xl">
         <img src="/public/img/icons/main-icon.webp" alt="" class="hidden md:block rounded-t-xl aspect-video md:aspect-square md:rounded-l-xl md:rounded-none">
         <p class="px-8 py-4 content-center leading-10 text-pretty text-xl text-outer_space-900">Cuando Jesús confía a los apóstoles la misión de llevar el Evangelio de la salud-salvación hasta los confines del mundo, les manda curar a los enfermos como un signo inequívoco de la presencia del Reino de Dios. Jesús reunió a los Doce y les dio autoridad para expulsar a todos los malos espíritus y poder para curar enfermedades. Después los envió a anunciar el Reino de Dios y a curar (Lc 9, 1-2).</p>
-    </footer> -->
+    </footer>
 
     <!--Version con CSS -->
-    <header>
+    <!-- <header>
         <h1>Nosotros</h1>
     </header>
     <main>
@@ -72,11 +72,23 @@ import Layout from "../layouts/Layout.astro"
     <footer>
         <img src="/public/img/icons/main-icon.webp" alt="" class=" trinidad">
         <p class="versiculo">Cuando Jesús confía a los apóstoles la misión de llevar el Evangelio de la salud-salvación hasta los confines del mundo, les manda curar a los enfermos como un signo inequívoco de la presencia del Reino de Dios. Jesús reunió a los Doce y les dio autoridad para expulsar a todos los malos espíritus y poder para curar enfermedades. Después los envió a anunciar el Reino de Dios y a curar (Lc 9, 1-2).</p>
-    </footer>
+    </footer> -->
+    <section class="form-Datos">
+        <h4>Solcitud de Cita</h4>
+        <h5>
+            Llámenos al 281-0594 O complete el siguiente formulario y uno de nuestros empleados se comunicará con usted para confirmar una cita
+        </h5>
+        <input class="ctn" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre">
+        <input class="ctn" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese su apellido">
+        <input class="ctn" type="text" name="Telefono" id="Telefono" placeholder="Ingrese su telefono">
+        <input class="ctn" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo">
+        <textarea class="ctn" name="Mensaje" id="Mensaje" placeholder="Escribe tu mensaje aqui"></textarea>
+        <input class="btn" type="submit" value="Enviar">
+    </section>
 </Layout>
 
 <style>
-    header{
+    /* header{
         display: flex;
         justify-content: center;
         margin-bottom: 1rem;
@@ -183,5 +195,61 @@ import Layout from "../layouts/Layout.astro"
         .item01, .item02, .item03, .item04, .item05, .item06, .item07{
             grid-column: 1;
         }
+    } */
+    .form-Datos{
+        width: 800px;
+        background: #124a8f;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'calibri';
+        color: white;
+        box-shadow: 12px 18px 37px #000;
+
+
+    }
+
+    .form-Datos h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .form-Datos h5{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .ctn{
+        width: 100%;
+        background: 24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #f6f6f6;
+        font-family: 'calibri';
+        font-size: 18px;
+        
+    }
+
+    .form-Datos p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+
+    }
+
+    .form-Datos a:hover {
+        color: white;
+        text-decoration: underline;
+
+    }
+    .form-Datos .btn{
+        width: 100%;
+        background: #253350;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+
     }
 </style>
